@@ -19,7 +19,7 @@ In long-term use, if an error occurs when recompiling FAST_LIO_LC, you can recom
 - Put livox_ros_driver and FAST_LIO_LC under the same src;
 - Or Before compiling FAST_LIO_LC, source the workspace of livox_ros_driver first, like this:
 
-![1](/home/doongli/Github-Workspace/DoongLi/FAST_LIO_LC/IMG/1.png)
+![1](IMG/1.png)
 
 #### 3.Release Mode
 
@@ -32,11 +32,11 @@ In long-term use, if an error occurs when recompiling FAST_LIO_LC, you can recom
 
 Before:
 
-![2](/home/doongli/Github-Workspace/DoongLi/FAST_LIO_LC/IMG/2.png)
+![2](IMG/2.png)
 
 After:
 
-![3](/home/doongli/Github-Workspace/DoongLi/FAST_LIO_LC/IMG/3.png)
+![3](IMG/3.png)
 
 4.2 Set up saved map
 
@@ -60,11 +60,11 @@ roslaunch aloam_velodyne fastlio_livox.launch
 
 The following error is normal: 
 
-![5](/home/doongli/Github-Workspace/DoongLi/FAST_LIO_LC/IMG/5.png)
+![5](IMG/5.png)
 
 If a loop is detected and passed successfully, the following will be displayed:
 
-![4](/home/doongli/Github-Workspace/DoongLi/FAST_LIO_LC/IMG/4.png)
+![6](IMG/6.png)
 
 ## Reference
 
