@@ -14,6 +14,23 @@ When installing gtsam, use `cmake -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF ..` to com
 
 In long-term use, if an error occurs when recompiling FAST_LIO_LC, you can recompile gtsam and Ceres.
 
+```bash
+mkdir build && cd build
+# For Ubuntu 22.04, add -DGTSAM_USE_SYSTEM_EIGEN=ON
+cmake .. -DGTSAM_BUILD_EXAMPLES_ALWAYS=OFF \
+         -DGTSAM_BUILD_TESTS=OFF \
+         -DGTSAM_WITH_TBB=OFF \
+         -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF
+make -j$(nproc)
+sudo make install
+
+# Install Ceres
+mkdir ceres-solver/build && cd ceres-solver/build
+cmake .. -DBUILD_EXAMPLES=OFF -DBUILD_TESTING=OFF -DUSE_CUDA=OFF
+make -j$(nproc)
+sudo make install
+```
+
 #### 2.livox_ros_driver Problem
 
 - Put livox_ros_driver and FAST_LIO_LC under the same src;
